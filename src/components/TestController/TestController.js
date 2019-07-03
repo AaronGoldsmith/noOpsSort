@@ -1,7 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import { API_START, BASE_API } from "../../config/";
+import { API_START } from "../../config/";
 import { startExam } from "../../actionCreators";
+import TestLoader from "./TestLoader";
 
 import "./exam.css";
 
@@ -9,8 +10,6 @@ class TestController extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      colorList: [],
-      colorsPicked: [],
       time: 0
     };
     this.stopwatch = undefined;
@@ -46,13 +45,7 @@ class TestController extends React.Component {
     return (
       <div>
         {message && <div>{message}</div>}
-        {question && (
-          <ul>
-            {question.map((num, i) => {
-              return <li key={i}>{num}</li>;
-            })}
-          </ul>
-        )}
+        {question && <TestLoader itemList={question} />}
         <button type="submit">I'm done</button>
         <p>{transformNum}</p>
       </div>
