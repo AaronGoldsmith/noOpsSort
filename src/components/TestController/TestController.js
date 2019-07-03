@@ -36,12 +36,16 @@ class TestController extends React.Component {
 
   render() {
     const { message, question, time } = this.state;
+    const minute = Math.floor(time / 60);
+    const second = time % 60;
     let transformNum =
       time < 10
         ? `0:0${time}`
         : time < 60
         ? `0:${time}`
-        : `${60 / time}:${60 % time}`;
+        : minute > 0 && second < 10
+        ? `${minute}:0${second}`
+        : `${minute}:${second}`;
     return (
       <div>
         {message && <div>{message}</div>}
