@@ -1,9 +1,6 @@
-// import axios from "axios";
-import { SET_QST_MSG, BASE_API, axios_post, axios_get } from "./config";
+import { SET_QST_MSG, axios_post, axios_get } from "./config";
 const headers = { "content-type": "application/json" };
 const API_BASE = "https://api.noopschallenge.com";
-
-
 
 
 export function getExam(URL) {
@@ -19,6 +16,7 @@ export function getExam(URL) {
       .catch(error => console.log(error));
   };
 }
+
 export function startExam(URL) {
   const body = { login: "AaronGoldsmith" };
   return dispatch => {
@@ -30,7 +28,6 @@ export function startExam(URL) {
       .catch(error => console.warn("Error: could not connect to exams", error));
   };
 }
-// key = base
 export function sendExam(URL, answers){
   const path = `${API_BASE}${URL}`
   const body = {solution: answers};

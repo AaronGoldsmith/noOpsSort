@@ -25,6 +25,7 @@ li {
   text-overflow: ellipsis;
   padding: 12px 0px;
   padding-inline-start: 0px;
+  overflow-x: scroll;
 }
 
 .draggable {
