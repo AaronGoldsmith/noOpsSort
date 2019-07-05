@@ -1,21 +1,19 @@
 # noops challenges
 ## Challenge #2 - [SortBot](https://github.com/noops-challenge/sortbot)
 
-> Github posed the noops challenge: https://noopschallenge.com/  -- I accepted
->
+Github posed the noops challenge: https://noopschallenge.com/  -- I accepted
 
-Developed in [CodeSandbox](https://codesandbox.io)
---
+Shout out to [CodeSandbox](https://codesandbox.io) for making ad-hoc enviornments which expedite the development process.
+
 
 
 ## Installation
-```
-git clone `https://github.com/AaronGoldsmith/noOpsSort`
+1.   `git clone https://github.com/AaronGoldsmith/noOpsSort `
+2.   `cd noOpsSort`
+3.   `npm install` 
+4.   `npm start`
 
-cd noOpsSort
-  npm install 
-  npm start
-```
+Alternatively check out the master branch live on [codesandbox](https://codesandbox.io/s/github/AaronGoldsmith/noOpsSort)
 
 ## Instructions
 ![Sortbot](./public/sortbot3.gif)
