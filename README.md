@@ -1,11 +1,12 @@
-# noops challenge 2 - SortBot 
-## challenge 2
-Github Noops posed the challenge: https://github.com/noops-challenge/sortbot
+# noops challenges
+## Challenge #2 - [SortBot](https://github.com/noops-challenge/sortbot)
+
+> Github posed the noops challenge: https://noopschallenge.com/  -- I accepted
+>
 
 Developed in [CodeSandbox](https://codesandbox.io)
 --
 
-![Sortbot](./public/sortbot3.gif)
 
 ## Installation
 ```
@@ -16,8 +17,11 @@ cd noOpsSort
   npm start
 ```
 
-## Usage
+## Instructions
+![Sortbot](./public/sortbot3.gif)
 
-Currently only set up to track my GH account
+Working version exclusively permits user account: [AaronGoldsmith](https://github.com/AaronGoldsmith). 
 
-![Sortbot](./public/sortbot2.png)
+ * Each sorting challenge poses a different instruction set. 
+ * Read the instructions and follow the prompt to move to the next level
+ * Each round is slightly different and the entire exam is timed
